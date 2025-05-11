@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saylani Online Academy - Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    .form-container {
+      background-color: rgb(207, 205, 205);
+      padding: 20px;
+      width: 800px;
+      margin: auto;
+      border-radius: 10px;
+   
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="email"],
+    .form-container input[type="date"],
+    .form-container select,
+    .form-container textarea {
+      width: 90%;
+      padding: 8px;
+      margin: 5px 0;
+    }
+    .form-container input[type="file"] {
+      margin: 5px 0;
+    }
+    .form-container input[type="submit"],
+    .form-container input[type="button"] {
+      padding: 8px 16px;
+      margin: 10px 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Saylani Logo Placeholder -->
+  <img src="./Assests/65dfacb4c2e25.jpg" alt="Saylani Logo" width="200">
+
+  <h2>Saylani Online Academy</h2>
+  <div class="form-container">
+    <h3>Student Registration Form</h3>
+    <form method="get" action="successfull.html">
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Name">
+
+      <label>Father Name:</label>
+      <input type="text" name="fatherName" placeholder="Father Name">
+
+      <label>Password:</label>
+      <input type="password" name="password">
+
+      <label>Address:</label>
+      <textarea name="address" rows="3"></textarea>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+
+      <br><br>
+      <label>Language:</label>
+      <input type="checkbox" name="language" value="Urdu"> Urdu
+      <input type="checkbox" name="language" value="English"> English
+      <input type="checkbox" name="language" value="Arabic"> Arabic
+      <input type="checkbox" name="language" value="Chines"> Chines
+
+      <br><br>
+      <label>DOB:</label>
+      <input type="date" name="dob">
+
+      <label>Email ID:</label>
+      <input type="email" name="email">
+
+      <label>Mobile Number:</label>
+      <input type="text" name="mobile">
+
+      <label>City:</label>
+      <select name="city">
+        <option>Select Your City</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Hyderabad</option>
+      </select>
+
+      <label>Hobbies:</label>
+      <select name="hobbies" multiple size="4">
+        <option>Cricket</option>
+        <option>Football</option>
+        <option>Hockey</option>
+        <option>Tennis</option>
+      </select>
+
+      <label>Picture Upload:</label>
+      <input type="file" name="picture">
+      <input type="button" value="Upload">
+
+      <br><br>
+      <input type="submit" value="Submit Form">
+    </form>
+  </div>
+</body>
+</html>
